@@ -1,53 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Projeto Aula</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim</title>
-    
+    <title>Sobre Mim | Paulo Henrique Fracasso Norato</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0D0D0D;
+            color: #E5E0D8;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 1px;
+            background-color: #C5A059;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #C5A059;
+            margin: 0 auto 25px auto;
+            display: block;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: "Georgia", serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #C5A059;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #8C867E;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #E5E0D8;
+            text-align: center;
+            margin: 0 auto 50px auto;
+            font-weight: 300;
+        }
+
+        .grid-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #141414;
+            border: 1px solid #1A1A1A;
+            padding: 35px;
+            transition: border-color 0.4s ease;
+        }
+
+        .card:hover {
+            border-color: #C5A059;
+        }
+
+        h2 {
+            font-family: "Georgia", serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #C5A059;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #B5AFA7;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        li {
+            font-size: 0.95rem;
+            color: #B5AFA7;
+            font-weight: 300;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #C5A059;
+        }
+
+        li strong {
+            color: #E5E0D8;
+            font-weight: 400;
+        }
+
+        .lattes-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #141414;
+            color: #C5A059;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid #C5A059;
+            transition: all 0.3s ease;
+        }
+
+        .lattes-link:hover {
+            background-color: #C5A059;
+            color: #0D0D0D;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: #595550;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Sobre Mim</h1>
-            <div class="subtitle">Educação & Tecnologia</div>
+            <img src="https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K2781829A1" alt="Foto de Perfil" class="profile-pic">
+            <h1>Paulo Henrique Fracasso Norato</h1>
+            <div class="subtitle">Especialista em Tecnologia da Informação</div>
         </header>
 
         <div class="intro-text">
-            Profissional dedicado à união entre ensino técnico e inovação tecnológica, com foco no desenvolvimento humano e na criação de soluções de alto nível.
+            Especialista em Tecnologia da Informação com foco multidisciplinar em Desenvolvimento e Automação. Profissional dedicado à união entre ensino técnico e inovação tecnológica, unindo modelagem de sistemas estruturados ao desenvolvimento acadêmico.
         </div>
 
         <div class="grid-section">
             
             <div class="card">
-                <h2>Educação e Mentoria</h2>
-                <p>Atuação como educador com forte ênfase no planejamento pedagógico e acompanhamento preciso do aprendizado em áreas técnicas e programação. Utilizo metodologias estruturadas e avaliações contínuas para garantir o pleno desenvolvimento dos alunos.</p>
-            </div>
-
-            <div class="card">
-                <h2>Tecnologia e Infraestrutura</h2>
+                <h2>Formação Acadêmica</h2>
                 <ul>
-                    <li><strong>Sistemas Web:</strong> Desenvolvimento e modelagem de dados focados em PHP, CSS e MySQL.</li>
-                    <li><strong>Eletrônica & Robótica:</strong> Construção de projetos físicos com microcontroladores Arduino e ESP8266, unindo programação a sensores e atuadores.</li>
-                    <li><strong>Infraestrutura de Redes:</strong> Especialista em administração de redes seguras com equipamentos MikroTik, incluindo protocolos VPN avançados e controle de acesso perimetral.</li>
+                    <li><strong>Graduação em Sistemas para Internet:</strong> Ensino Superior cursado na Unicesumar entre 2019 e 2022.</li>
+                    <li><strong>Engenharia de Software:</strong> Especialização concluída pela FAVENI.</li>
+                    <li><strong>Engenharia de Controle e Automação Industrial:</strong> Especialização concluída pela FAVENI.</li>
+                    <li><strong>Arquitetura e Infraestrutura de T.I.:</strong> Especialização concluída pela FAVENI.</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h2>Análise e Lógica</h2>
-                <p>Movido por uma base sólida em lógica e análise matemática. Aplico princípios de probabilidade e estatística na resolução de problemas, buscando sempre a otimização de sistemas e a precisão em todas as frentes de trabalho.</p>
+                <h2>Experiência Docente e Mentoria</h2>
+                <p>Desde 2021, atuo como Servidor Público e Professor das disciplinas Técnicas em TI na Secretaria de Educação do Estado do Paraná (SEED/PR). Minha prática é enriquecida por diversas formações complementares focadas no ensino tecnológico:</p>
+                <ul>
+                    <li><strong>Python no Ensino Médio:</strong> Capacitação como formador.</li>
+                    <li><strong>Pensamento Computacional:</strong> Participação ativa em grupos de estudos formadores em ação.</li>
+                    <li><strong>Robótica Educacional:</strong> Especialização no módulo de ensino de robótica.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Tecnologia e Projetos</h2>
+                <ul>
+                    <li><strong>Eletrônica & Robótica:</strong> Exposição de projetos práticos, como automação residencial com Arduino na Feira dos Cursos Técnicos, automação de parques de exposição e maquetes automatizadas.</li>
+                    <li><strong>Sistemas Web:</strong> Capacitação em PHP e Construct 2, focados no desenvolvimento de soluções e interfaces eficientes.</li>
+                    <li><strong>Reconhecimento Acadêmico:</strong> Recebedor do título de Trabalho Destaque e Honra ao Mérito pela Universidade Federal do Paraná (UFPR) no ano de 2017.</li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h2>Currículo Lattes</h2>
+                <p>Para um detalhamento completo de minhas certificações, participações em eventos (como a Latinoware e Encontros de Tecnologias Educacionais) e trajetória profissional, acesse meu currículo na íntegra.</p>
+                <a href="http://lattes.cnpq.br/8844121797205705" target="_blank" class="lattes-link">Acessar Lattes</a>
             </div>
 
         </div>
@@ -58,8 +223,4 @@
     </div>
 
 </body>
-</html>
-    
-  </body>
-  
 </html>
